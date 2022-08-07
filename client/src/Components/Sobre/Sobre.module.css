@@ -1,0 +1,42 @@
+.footer {
+  position: relative;
+}
+
+.footer img {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  min-height: 250px;
+}
+
+@media (max-width: 480px){
+  .footerInfo {
+    padding: 20px 0;
+    height: auto;
+  }
+  .rodapeMobile {
+    object-fit: contain;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+  }
+}
+
+.footerInfo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: #bcc6cf;
+  margin-bottom: 30px;
+}
+
+.footerInfo p:last-child {
+  margin-bottom: 0;
+}

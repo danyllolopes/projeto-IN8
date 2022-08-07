@@ -1,0 +1,171 @@
+.introBg {
+  background: url("../../Assets/imagens/index-image.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10px;
+
+}
+.header img {
+  width: 200px;
+  height: 40px;
+}
+.headerNav  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 0 10px;
+}
+
+.headerNav a {  
+  font-size: 1.125rem;
+  color: #FCFFFF;
+  font-family: 'Roboto', sans-serif; 
+  position: relative;
+
+}
+
+.headerNav  a::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #FCFFFF;
+  position: absolute;
+  top: 7px;  
+  right: -25px;
+}
+.headerNav a:last-child::after {
+  display: none;
+} 
+.headerNav a::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #FCFFFF;
+  position: absolute;
+  bottom: -2px;
+  transition: .4s ease-in-out;
+}
+.headerNav  a:hover::before{
+  width: 100%;
+}
+.intro {
+  margin-top: 80px;
+}
+.intro h1 {
+  color: #FCFFFF;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 6.25rem;
+}
+.intro p {
+  color: #FCFFFF;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 3.125rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+
+  .header {
+    padding: 40px 10px;
+  }
+  .header img {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    background: #000;
+  }
+  .intro {
+    margin-top: 10px;
+  }
+  .intro h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .header img {
+    width: 120px;
+    height: 40px;
+ 
+  }
+
+}
+.mobileButton {
+  background-image: url("../../Assets/icones/hamburguer.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 30px;
+  width: 35px;
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+  z-index: 150;
+
+  border: none;
+}
+
+
+.mobileButtonActive {
+  background-image: url("../../Assets/icones/hamburguer-aberto0.svg");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 35px;
+  
+}
+.navMobile {
+  display: block;
+  position: absolute;  
+  top: 0px;
+  left: 0px;
+  height: 220px;
+  min-width: 40%;
+  padding: 0 2rem;
+  background: #29AAE3;
+  opacity: 0;
+  pointer-events: none;
+} 
+
+.navMobileActive {
+  transition: 0.3s ease;
+  transform: initial;
+  opacity: 1;
+  z-index: 100;
+  pointer-events: initial;
+}
+
+.navMobile a
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;  
+  padding: 0.5rem 0;  
+  cursor: pointer;
+  color: #FCFFFF;
+  font-family: 'Roboto', sans-serif; 
+  transition: 0.3s;
+}
+.navMobile a:first-child {
+  margin-top: 90px;
+}
+.navMobile a:hover {
+  color: #e4ebeb;
+}

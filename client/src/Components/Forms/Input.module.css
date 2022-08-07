@@ -1,0 +1,33 @@
+.input {
+  border: none;
+  border-bottom: 1px solid #FCFFFF;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem; 
+  background: transparent;
+  margin-bottom: 15px;
+  color: #FCFFFF;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+ 
+}
+.input:hover,
+.input:focus {
+  outline: none;
+}
+.label {
+  font-family: "Roboto", sans-serif;
+  color: #FCFFFF;
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+  padding-bottom: 0.3rem;
+}
+.error {
+  color: #f31;
+  font-size: 0.875rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  top: -10px;
+}
