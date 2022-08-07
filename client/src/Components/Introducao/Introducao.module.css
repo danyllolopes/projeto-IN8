@@ -87,13 +87,18 @@
 }
 
 @media (max-width: 480px) {
+  
   .header {
     background: #000;
   }
   .intro {
     margin-top: 10px;
+    
   }
+  
+
   .intro h1 {
+    
     font-size: 3.5rem;
     text-align: center;
   }
@@ -116,8 +121,8 @@
   width: 35px;
   cursor: pointer;
   transition: 0.2s;
-  position: relative;
-  z-index: 150;
+  position: relative;  
+  margin-left: 22px;
 
   border: none;
 }
@@ -128,7 +133,11 @@
   background-repeat: no-repeat;
   height: 30px;
   width: 35px;
-  
+  margin-left: 22px;
+  transition: 0.2s;
+  position: relative;
+  z-index: 100;
+
 }
 .navMobile {
   display: block;
@@ -141,18 +150,10 @@
   background: #29AAE3;
   opacity: 0;
   pointer-events: none;
-} 
-
-.navMobileActive {
-  transition: 0.3s ease;
-  transform: initial;
-  opacity: 1;
-  z-index: 100;
-  pointer-events: initial;
+  z-index: 90;
+  
 }
-
-.navMobile a
-{
+.navMobile a {
   display: flex;
   align-items: center;
   width: 100%;
@@ -168,4 +169,13 @@
 }
 .navMobile a:hover {
   color: #e4ebeb;
+} 
+
+.navMobileActive {
+  transition: 0.3s ease;
+  transform: initial;
+  opacity: 1;
+  z-index: 80;
+  pointer-events: initial;
 }
+

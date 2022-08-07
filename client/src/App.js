@@ -1,14 +1,11 @@
 import React from 'react'
 import "./App.css"
-import Cadastro from './Components/Cadastro/Cadastro'
-import Introducao from './Components/Introducao/Introducao'
-
+import Home from './Components/Home'
 
 const App = () => {
-  return <>   
-     <Introducao />
-      <Cadastro /> 
-  </>
+  return <div>   
+     <Home />
+  </div>
    
 
 }

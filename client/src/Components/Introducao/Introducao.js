@@ -8,7 +8,7 @@ const Introducao = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);
   return (
     <div className={styles.introBg}>
-      <header className={`${styles.header} container animeTop`}>
+      <header className={`${styles.header} container`}>
       {mobile && (
               <button
                 className={`${styles.mobileButton} ${
